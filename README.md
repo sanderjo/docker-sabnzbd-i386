@@ -8,6 +8,10 @@ SABnzbd image for x86_64 https://github.com/timhaak/docker-sabnzbd
 Ubuntu 32-bit image by shawn, known as shawn/ubuntu-precise-i386
 
 How to use this:
+
+First: make sure port 8080 is not in use (for example by another SABnzbd instance)
+
+Then:
 ```
 git clone https://github.com/sanderjo/docker-sabnzbd-i386.git
 cd docker-sabnzbd/
@@ -22,4 +26,4 @@ sudo docker run -d -h sabnzbd-superbox  -v /root/sabnzbd-config:/config -v /root
 sudo docker ps
 
 ```
-Then your webbrowser to http://localhost:8080/ and fill out the wizard
+Then point your webbrowser to http://localhost:8080/ and fill out the wizard
