@@ -5,11 +5,11 @@ Docker image for SABnzbd on Ubuntu i386/32-bit, so suitable for 32-bit hosts
 
 Based on:
 - SABnzbd docker image for x86_64 by Tim Haak (https://github.com/timhaak/docker-sabnzbd)
-- 32-bit docker Ubuntu image by shawn, known as shawn/ubuntu-precise-i386
+- 32-bit docker Ubuntu image by shawn (docker hub: shawn/ubuntu-precise-i386)
 
 How to use this:
 
-First: make sure port 8080 is not in use (for example by another SABnzbd instance)
+First: make sure port 8080 is not in use (for example by another SABnzbd instance on the host or in a docker container)
 
 Then:
 ```
@@ -32,14 +32,15 @@ After filling out the wizard, do a test download. If that works, do an important
 - Temporary Download Folder: /data/incomplete
 - Completed Download Folder: /data/complete
 
-Then click on "Save Changes". This step is important, because only that way the downloaded stuff is saved to the real filesystem (= filesystem of the host), instead of staying inside the docker container (and thus getting lost after exiting the container).
+Then click on "Save Changes". This step is important, because only that way the downloaded stuff is saved to the real filesystem (= filesystem of the host), instead of staying inside the docker container (and thus getting lost after stopping the container).
 
-You should then see the results this way:
+Now do a real download. You should then inspect the results this way:
 ```
 sudo ls -al /root/sabnzbd-config
 sudo ls -al /root/sabnzbd-data/complete
 ```
 
+Happy downloading.
 
 
 
