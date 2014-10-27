@@ -9,7 +9,7 @@ Ubuntu 32-bit image by shawn, known as shawn/ubuntu-precise-i386
 
 How to use this:
 ```
-git clone https://github.com/timhaak/docker-sabnzbd.git
+git clone https://github.com/sanderjo/docker-sabnzbd-i386.git
 cd docker-sabnzbd/
 
 sudo mkdir /root/sabnzbd-config
