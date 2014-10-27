@@ -26,4 +26,11 @@ sudo docker run -d -h sabnzbd-superbox  -v /root/sabnzbd-config:/config -v /root
 sudo docker ps
 
 ```
-Then point your webbrowser to http://localhost:8080/ and fill out the wizard
+Then point your webbrowser to http://localhost:8080/ and fill out the wizard.
+
+After filling out the wizard, do a test download. If that works, do an important thing: Go to http://localhost:8080/config/folders/ and fill out:
+- Temporary Download Folder: /data/incomplete
+- Completed Download Folder: /data/complete
+Save this info. This step is important, because only that way the downloaded stuff is saved to the real filesystem (= filesystem of the host), instead of staying inside the docker container (and thus getting lost after exiting the container).
+
+
