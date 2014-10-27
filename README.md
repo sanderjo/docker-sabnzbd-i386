@@ -26,6 +26,7 @@ sudo docker run -d -h sabnzbd-superbox  -v /root/sabnzbd-config:/config -v /root
 sudo docker ps
 
 ```
+The last command should show the container 'sabnzbd-i386' running.
 Then point your webbrowser to http://localhost:8080/ and fill out the wizard.
 
 After filling out the wizard, do a test download. If that works, do an important thing: Go to http://localhost:8080/config/folders/ and fill out:
