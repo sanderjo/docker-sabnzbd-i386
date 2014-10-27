@@ -15,9 +15,9 @@ cd docker-sabnzbd/
 sudo mkdir /root/sabnzbd-config
 sudo mkdir /root/sabnzbd-data
 
-sudo docker build -t sab-testing .
+sudo docker build -t sabnzbd-i386 .
 
-sudo docker run -d -h sabnzbd-superbox  -v /root/sabnzbd-config:/config -v /root/sabnzbd-data:/data -p 8080:8080 -p 9090:9090 sab-testing
+sudo docker run -d -h sabnzbd-superbox  -v /root/sabnzbd-config:/config -v /root/sabnzbd-data:/data -p 8080:8080 -p 9090:9090 sabnzbd-i386
 
 sudo docker ps
 
