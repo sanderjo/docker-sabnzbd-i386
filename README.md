@@ -16,12 +16,12 @@ Then:
 git clone https://github.com/sanderjo/docker-sabnzbd-i386.git
 cd docker-sabnzbd/
 
-sudo mkdir /root/sabnzbd-config
-sudo mkdir /root/sabnzbd-data
+mkdir ~/sabnzbd-config
+mkdir ~/sabnzbd-data
 
 sudo docker build -t sabnzbd-i386 .
 
-sudo docker run -d -h sabnzbd-superbox  -v /root/sabnzbd-config:/config -v /root/sabnzbd-data:/data -p 8080:8080 -p 9090:9090 sabnzbd-i386
+sudo docker run -d -h sabnzbd-superbox  -v ~/sabnzbd-config:/config -v ~/sabnzbd-data:/data -p 8080:8080 -p 9090:9090 sabnzbd-i386
 
 sudo docker ps
 
@@ -37,8 +37,8 @@ Then click on "Save Changes". This step is important, because only that way will
 
 Now do a real download. You should then inspect the results this way:
 ```
-sudo ls -al /root/sabnzbd-config
-sudo ls -al /root/sabnzbd-data/complete
+sudo ls -al ~/sabnzbd-config
+sudo ls -al ~/sabnzbd-data/complete
 ```
 
 Happy downloading.
