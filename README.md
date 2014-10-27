@@ -34,4 +34,13 @@ After filling out the wizard, do a test download. If that works, do an important
 
 Then click on "Save Changes". This step is important, because only that way the downloaded stuff is saved to the real filesystem (= filesystem of the host), instead of staying inside the docker container (and thus getting lost after exiting the container).
 
+You should then see the results this way:
+```
+sudo ls -al /root/sabnzbd-config
+sudo ls -al /root/sabnzbd-data/complete
+```
+
+
+
+
 
