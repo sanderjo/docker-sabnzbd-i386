@@ -4,7 +4,7 @@ docker-sabnzbd-i386
 Docker image for SABnzbd on Ubuntu i386/32-bit, so suitable for 32-bit hosts
 
 Based on:
-- SABnzbd docker image for x86_64 https://github.com/timhaak/docker-sabnzbd
+- SABnzbd docker image for x86_64 by Tim Haak (https://github.com/timhaak/docker-sabnzbd)
 - 32-bit docker Ubuntu image by shawn, known as shawn/ubuntu-precise-i386
 
 How to use this:
