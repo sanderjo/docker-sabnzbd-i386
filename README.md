@@ -33,7 +33,7 @@ After filling out the wizard, do a test download. If that works, do an important
 - Temporary Download Folder: /data/incomplete
 - Completed Download Folder: /data/complete
 
-Then click on "Save Changes". This step is important, because only that way the downloaded stuff is saved to the real filesystem (= filesystem of the host), instead of staying inside the docker container (and thus getting lost after stopping the container).
+Then click on "Save Changes". This step is important, because only that way will the downloaded files be saved to the real filesystem (= filesystem of the host), instead of staying inside the docker container (and thus getting lost after stopping the container).
 
 Now do a real download. You should then inspect the results this way:
 ```
